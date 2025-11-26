@@ -106,20 +106,16 @@ Dataset → Format Prompt → Call LLM API/Load a Model → Parse Output → Eva
 
 #### `config.py`
 - Environment configuration and API keys
-- Dataset loading with exemplar selection
-- Prompt formatting with 60+ instruction templates
+- Prompt formatting function
 
 #### `evaluate_closed_model.py`
 - **Claude**: Uses Anthropic Batch API for batch processing
 - **OpenAI**: Uses OpenAI Batch API with support for reasoning models
-- Handles extended thinking mode (budget_tokens: 2048)
-- Returns predictions with accuracy metrics
+- Handles extended thinking mode
 
 #### `evaluate_open_model.py`
 - ModelLoader class wraps HuggingFace transformers
-- Dynamic batch sizing based on model size
 - Model-specific output parsing with regex patterns
-- GPU memory management (`gc.collect(), cuda.empty_cache`)
 
 #### `test_models.py`
 - Entry point for all evaluations
@@ -127,8 +123,7 @@ Dataset → Format Prompt → Call LLM API/Load a Model → Parse Output → Eva
 - Aggregates results and prints accuracy/F1 scores
 
 #### `instance_constuction_sample.ipynb`
-- Sample code that presents the usage of `format_question` function
-- `format_question` converts a dataset instance into a prompt
+- Sample code that shows the usage of `format_question` function (converts a dataset instance into a prompt)
 
 ## Output
 
@@ -144,13 +139,6 @@ Each evaluation produces a CSV with:
 - `model`: Model identifier
 - `fewshot`: Whether few-shot was used
 - `NotANumber`: Parsing failure indicator
-
-### Summary Statistics
-
-Aggregated results in `summarised_results.csv`:
-- Per-model accuracy and F1 scores
-- Stratified by few-shot setting
-- Organized by model family
 
 ## Configuration
 
