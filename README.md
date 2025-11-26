@@ -6,7 +6,7 @@ This project evaluates various Large Language Models (LLMs) on the **Japanese Ba
 
 ## Key Features
 
-- **Multi-Model Support**: Evaluate 30+ LLMs including Claude, GPT-4o, Qwen, Llama, and more
+- **Multi-Model Support**: Evaluate 20+ LLMs including Claude, GPT-4o, Qwen, Llama, and more
 - **Batch Processing**: Efficient batch API integration with OpenAI and Anthropic
 - **Few-shot & Zero-shot**: Test both learning paradigms with configurable exemplars
 - **Extended Thinking**: Support for reasoning-enhanced models (Claude, o3, etc.)
