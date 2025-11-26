@@ -7,15 +7,12 @@ This project evaluates various Large Language Models (LLMs) on the **Japanese Ba
 ## Key Features
 
 - **Multi-Model Support**: Evaluate 20+ LLMs including Claude, GPT-4o, Qwen, Llama, and more
-- **Batch Processing**: Efficient batch API integration with OpenAI and Anthropic
 - **Few-shot & Zero-shot**: Test both learning paradigms with configurable exemplars
-- **Extended Thinking**: Support for reasoning-enhanced models (Claude, o3, etc.)
-- **Comprehensive Metrics**: Accuracy, F1 scores, and detailed per-model analysis
 - **Flexible Infrastructure**: Easy to extend with new models and datasets
 
 ## Dataset
 
-**Japanese Bar Exam QA v2** (`nguyenthanhasia/japanese-bar-exam-qa-v2`)
+[**Japanese Bar Exam QA v2**](https://huggingface.co/datasets/nguyenthanhasia/japanese-bar-exam-qa)
 - Legal multiple-choice questions from Japan's bar examination
 - Binary classification: judge statements as correct (1) or incorrect (0)
 - Splits: training, validation, and test sets
