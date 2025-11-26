@@ -1,4 +1,4 @@
-# Japanese Bar Exam QA - LLM Evaluation
+# Japanese Bar Exam QA - Evaluation Code
 
 ## Overview
 
