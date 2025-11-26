@@ -29,15 +29,8 @@ project/
 │   ├── config.py                    # Configuration and constants
 │   ├── evaluate_closed_model.py     # Claude & OpenAI evaluation
 │   ├── evaluate_open_model.py       # Open-source LLM evaluation
-│   ├── test_models.py               # Main evaluation script
-│   ├── test_open_models.sh          # Bash script for batch evaluation
-│   └── 00_summarise_visualise.ipynb # Results analysis notebook
-├── results/
-│   ├── results_per_model/           # Per-model performance CSV files
-│   ├── summarised_results.csv       # Aggregated results
-│   └── llm-jp-13b-examples.txt      # Sample outputs
-├── closed_model_dataset/            # JSONL files for Batch API
-├── record/                          # Batch job tracking
+│   └── test.py                      # Main evaluation script
+├── requirements.txt
 └── README.md
 ```
 
@@ -106,7 +99,7 @@ python test_models.py --model_id meta-llama/Llama-3.1-70B-Instruct --fewshot tru
 ### Evaluation Pipeline
 
 ```
-Dataset → Format Prompt → Call LLM API → Parse Output → Evaluate → DataFrame
+Dataset → Format Prompt → Call LLM API/Load a Model → Parse Output → Evaluate → DataFrame
 ```
 
 ### Key Components
@@ -126,7 +119,7 @@ Dataset → Format Prompt → Call LLM API → Parse Output → Evaluate → Dat
 - ModelLoader class wraps HuggingFace transformers
 - Dynamic batch sizing based on model size
 - Model-specific output parsing with regex patterns
-- GPU memory management (gc.collect(), cuda.empty_cache)
+- GPU memory management (`gc.collect(), cuda.empty_cache`)
 
 #### `test_models.py`
 - Entry point for all evaluations
