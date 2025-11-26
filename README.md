@@ -1,7 +1,5 @@
 # Japanese Bar Exam QA - LLM Evaluation
 
-English | [日本語](#日本語版)
-
 ## Overview
 
 This project evaluates various Large Language Models (LLMs) on the **Japanese Bar Exam Question-Answer dataset** (JBE-QA). It provides a comprehensive evaluation framework for both closed-source models (Claude, GPT) and open-source models, supporting both few-shot and zero-shot prompting strategies.
@@ -193,13 +191,12 @@ If you use this evaluation framework, please cite:
   author={Zhihan Cao, Fumihito Nishino, Hiroaki Yamada, Nguyen Ha Thanh, Yusuke Miyao, Ken Satoh},
   year={2025},
   publisher={Arxiv},
-  howpublished={\url{https://github.com/yourusername/jbe-qa-evaluation}}
 }
 ```
 
 ## License
 
-This code is released under the [CC BY 4.0] license.
+This code is released under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
 
 The underlying content originates from official government sources that are in the public domain. Please refer to the original source for their terms of use.
 
