@@ -133,6 +133,10 @@ Dataset → Format Prompt → Call LLM API → Parse Output → Evaluate → Dat
 - Automatic routing to appropriate evaluation function
 - Aggregates results and prints accuracy/F1 scores
 
+#### `instance_constuction_sample.ipynb`
+- Sample code that presents the usage of `format_question` function
+- `format_question` converts a dataset instance into a prompt
+
 ## Output
 
 ### Results Format
